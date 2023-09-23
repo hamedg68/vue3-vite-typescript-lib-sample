@@ -21,10 +21,10 @@
 <style scoped>
 button {
   padding: .6rem 1.25rem;
-  background-color: #01b419;
+  background-color: #bd1c00;
   border: 0;
 }
 button:hover {
-  background-color: #2b4b2f;
+  background-color: #da7563;
 }
 </style>
