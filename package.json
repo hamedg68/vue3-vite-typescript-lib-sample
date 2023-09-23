@@ -3,6 +3,12 @@
   "private": false,
   "version": "0.1.7",
   "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --emitDeclarationOnly && vite build",
+    "preview": "vite preview"
+  },
+  "license": "MIT",
   "files": [
     "dist"
   ],
@@ -20,11 +26,14 @@
     }
   },
   "types": "./dist/index.d.ts",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --emitDeclarationOnly && vite build",
-    "preview": "vite preview"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamedg68/vue3-vite-typescript-lib-sample.git"
   },
+  "bugs": {
+    "url": "https://github.com/hamedg68/vue3-vite-typescript-lib-sample/issues"
+  },
+  "homepage": "https://github.com/hamedg68/vue3-vite-typescript-lib-sample#readme",
   "dependencies": {
     "vue": "^3.3.4"
   },
