@@ -6,15 +6,10 @@ jobs:
     publish:
         runs-on: ubuntu-latest
         steps:
-            - name: checkout
-              uses: actions/checkout@v2
             - name: node
-              uses: actions/setup-node@v2
-              with:
-                  node-version: 12
-                  registry-url: https://registry.npmjs.org
+              run: npm run build
             - name: publish
               run: npm publish --access public
               working-directory: my-package
               env:
-                  NODE_AUTH_TOKEN: ${{vue3_vite_typescript_lib_sample_npmjs_token}}
+                  NODE_AUTH_TOKEN: ${{VUE3_VITE_TYPESCRIPT_LIB_SAMPLE_NPMJS_TOKEN}}
