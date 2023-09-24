@@ -1,4 +1,5 @@
 import type { App } from "vue";
+import '../style.css'
 import { HelloWorld, MyButton, MyInput } from "@/components";
 
 export default {

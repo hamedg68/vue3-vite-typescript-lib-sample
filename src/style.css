@@ -3,6 +3,7 @@ button {
   background-color: #bd1c00;
   border-radius: 8px;
   border: 0;
+  color: wheat;
 }
 button:hover {
   background-color: #da7563;
