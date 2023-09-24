@@ -33,6 +33,8 @@ export default defineConfig({
       name: "testLibMedium",
       formats: ["es", "cjs", "umd"],
       fileName: (format) => `test-lib-medium.${format}.js`,
+      // fileName: (format) => (format === "es" ? "index.js" : "index.cjs"),
+
     },
     rollupOptions: {
       // make sure to externalize deps that should not be bundled
@@ -56,6 +58,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve("src"),
+      // "@": fileURLToPath(new URL("./src", import.meta.url)),
+
     },
   },
+ 
 });
