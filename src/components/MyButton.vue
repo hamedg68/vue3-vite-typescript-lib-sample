@@ -18,7 +18,7 @@
   </button>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 button {
   padding: .6rem 1.25rem;
   background-color: #bd1c00;
@@ -27,4 +27,4 @@ button {
 button:hover {
   background-color: #da7563;
 }
-</style>
+</style> -->
